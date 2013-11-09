@@ -104,6 +104,14 @@ nav li a:hover {
   background-color: #eee;
 }
 
+.tickets {
+  padding: 100px 0;
+}
+
+.tickets h4 {
+  font-weight: 400;
+}
+
 .date-and-venue {
   padding: 100px 0;
   text-align: center;
