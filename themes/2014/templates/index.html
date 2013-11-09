@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<header>
+<header data-top="background-position-y:50%" data-top-bottom="background-position-y: 100%">
   <div class="row">
     <div class="large-12 columns">
       <div class="with-logo">
@@ -11,7 +11,19 @@
     </div>
   </div>
 </header>
-<section class="about">
+<nav data-center-center="background-color:rgb(255,255,255)" data-top="background-color:rgb(90,159,212)">
+  <div class="row">
+    <div class="large-10 columns large-centered">
+      <ul class="large-block-grid-4">
+        <li><a href="#about">PyCon Philippines</a></li>
+        <li><a href="#2012">PyCon PH 2012</a></li>
+        <li><a href="#date-and-venue">Date and Venue</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="about" class="about">
   <div class="row">
     <div class="large-8 columns large-centered">
       <div class="description">
@@ -33,7 +45,7 @@ et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant so
 </section>
 <section class="calls">
   <div class="row">
-    <div class="large-6 columns">
+    <div class="large-4 columns">
       <h3>Call for Sponsors</h3>
       <p>Lorem ipsum gypsum board of the rins of fire. This girl is on
       fire. This love has taken over you. I'm crashing over the rainbow
@@ -41,13 +53,21 @@ et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant so
       head. Boy, I love you like I never stop falling in love with you.</p>
       <button>Interested?</button>
     </div>
-    <div class="large-6 columns">
+    <div class="large-4 columns">
       <h3>Call for Proposals</h3>
       <p>Lorem ipsum gypsum board of the rins of fire. This girl is on
       fire. This love has taken over you. I'm crashing over the rainbow
       way. It's my way or not here I am. You can't get you out of my
       head. Boy, I love you like I never stop falling in love with you.</p>
       <button>Submit a Proposal</button>
+    </div>
+    <div class="large-4 columns">
+      <h3>Call for Volunteers</h3>
+      <p>Lorem ipsum gypsum board of the rins of fire. This girl is on
+      fire. This love has taken over you. I'm crashing over the rainbow
+      way. It's my way or not here I am. You can't get you out of my
+      head. Boy, I love you like I never stop falling in love with you.</p>
+      <button>Help us out</button>
     </div>
   </div>
 </section>

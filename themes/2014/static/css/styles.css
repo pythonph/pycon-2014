@@ -6,6 +6,14 @@ h1, h2, h3, h4, h5, h6, button {
   font-family: Raleway, sans-serif;
 }
 
+a {
+  color: #5a9fd4;
+}
+
+a:hover {
+  color: #5a9fd4;
+}
+
 button {
   background-color: #ffd43b;
   box-shadow: none;
@@ -25,7 +33,6 @@ header {
   background: url(../images/splash.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
-  height: 100%;
   padding: 300px 0;
 }
 
@@ -57,8 +64,35 @@ header .with-logo {
   padding-left: 284px;
 }
 
+nav {
+  background-color: #5a9fd4;
+  z-index: 10;
+}
+
+nav ul li {
+  padding-bottom: 0 !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav li a {
+  color: white;
+  display: inline-block;
+  line-height: 2em;
+  padding: 0 0.5em;
+  border: 3px solid white;
+  width: 100%;
+  margin: 1em 0;
+}
+
+nav li a:hover {
+  color: #ffd43b;
+  border-color: #ffd43b;
+}
+
 .about {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .about .description {
