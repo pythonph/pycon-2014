@@ -99,6 +99,11 @@ nav li a:hover {
   font-size: 150%;
 }
 
+.pycon-ph-2012 {
+  padding: 100px 0;
+  background-color: #eee;
+}
+
 .date-and-venue {
   padding: 100px 0;
   text-align: center;
