@@ -99,6 +99,44 @@ nav li a:hover {
   font-size: 150%;
 }
 
+.date-and-venue {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.date-and-venue h3 {
+  font-family: Lora, serif;
+  border-bottom: 1px solid #111;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.cal {
+  font-family: Raleway, sans-serif;
+  display: inline-block;
+  width: 10em;
+  text-align: center;
+}
+
+.cal span {
+  display: block;
+  width: 100%;
+}
+
+.cal .m,
+.cal .y {
+  line-height: 2em;
+  background-color: #5a9fd4;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.cal .d {
+  font-size: 6em;
+  line-height: 1;
+}
+
 .calls {
   color: white;
   background-color: #222;
