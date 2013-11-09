@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'marksteve'
 SITENAME = u'Pycon Philippines 2014'
-SITEURL = ''
+SITEURL = 'http://pycon.python.ph'
 
 TIMEZONE = 'Asia/Manila'
 
@@ -23,13 +23,6 @@ LINKS = (
   ('You can modify those links in your config file', '#'),
 )
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
 DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
 
 THEME = 'themes/2014'
