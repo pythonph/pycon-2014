@@ -77,11 +77,11 @@ nav ul li {
 }
 
 nav li a {
-  color: white;
+  color: inherit;
   display: inline-block;
   line-height: 2em;
   padding: 0 0.5em;
-  border: 3px solid white;
+  border: 3px solid;
   width: 100%;
   margin: 1em 0;
 }
