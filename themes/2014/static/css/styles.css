@@ -146,17 +146,17 @@ nav li a:hover {
 }
 
 .cal .d {
-  font-size: 6em;
-  line-height: 1;
+  font-size: 3em;
+  line-height: 2;
 }
 
-.calls {
+.get-involved {
   color: white;
   background-color: #222;
   padding: 30px 0;
 }
 
-.calls h3 {
+.get-involved h3 {
   color: white;
 }
 
