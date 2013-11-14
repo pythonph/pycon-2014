@@ -137,12 +137,20 @@
 </section>
 <section id="tickets" class="tickets">
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-8 columns">
       <h3>Tickets</h3>
+      <p>Start of ticket selling is to be announced.</p>
     </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns">Start of ticket selling is to be announced.</div>
+    <div class="large-4 columns">
+      <p>
+        Subscribe to be notified about when tickets will be available
+        and for other PyCon PH 2014 updates.
+      </p>
+      <p>
+        <input class="email" type="text" placeholder="Email address">
+        <button class="subscribe">Subscribe</button>
+      </p>
+    </div>
     <!--
     <div class="large-4 columns">
       <h4>Php 500.00</h4>
@@ -230,4 +238,26 @@
     </div>
   </div>
 </footer>
+{% endblock %}
+
+{% block js %}
+<script>
+  var $subscribe = $('.subscribe');
+  var $email = $('.email');
+  $subscribe.on('click', function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '/balitaan',
+      type: 'post',
+      data: {email: $email.val()}
+    }).done(function() {
+      $subscribe.text('Subscribed');
+    }).error(function() {
+      $subscribe.text('Invalid email. Try again.').prop('disabled', false);
+      $email.prop('disabled', false);
+    });
+    $subscribe.text('Submitting...').prop('disabled', true);
+    $email.prop('disabled', true);
+  });
+</script>
 {% endblock %}
