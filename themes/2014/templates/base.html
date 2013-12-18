@@ -20,14 +20,24 @@
   <script
     src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/vendor/custom.modernizr.min.js"></script>
 </head>
-<body>
+<body class="{{ page_name or 'page ' + page.slug }}">
   {% block content %}{% endblock %}
+  <footer>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="links">
+          Organized by
+          <a href="http://python.ph">Python.PH Inc.</a>
+          &mdash;
+          <a href="https://www.facebook.com/groups/pythonph">Facebook</a>
+          &mdash;
+          <a href="https://github.com/pythonph">Github</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/vendor/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.2/js/foundation.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
-  <script src="/theme/js/jquery.sticky-kit.min.js"></script>
-  <script>skrollr.init();</script>
-  <script>$('nav').stick_in_parent();</script>
   <script>$(document).foundation();</script>
   {% block js %}{% endblock %}
 </body>

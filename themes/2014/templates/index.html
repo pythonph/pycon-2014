@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block js %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
+<script src="/theme/js/jquery.sticky-kit.min.js"></script>
+<script>skrollr.init();</script>
+<script>$('nav').stick_in_parent();</script>
+{% endblock %}
+
 {% block content %}
 <header data-top="background-position-y:50%" data-top-bottom="background-position-y: 100%">
   <div class="row">
@@ -17,9 +24,9 @@
   >
   <div class="row">
     <div class="large-12 columns">
-      <ul class="large-block-grid-4">
+      <ul class="large-block-grid-5">
         <li><a href="#about">PyCon Philippines</a></li>
-        <!-- <li><a href="#pycon-ph-2012">PyCon PH 2012</a></li> -->
+        <li><a href="#pycon-ph-2012">PyCon PH 2012</a></li>
         <li><a href="#date-and-venue">Date and Venue</a></li>
         <li><a href="#tickets">Tickets</a></li>
         <li><a href="#get-involved">Get Involved</a></li>
@@ -40,38 +47,41 @@
         enthusiasts, startup founders, corporate IT decision makers, students and IT educators in a
         2-day event where they can collaborate and network with each other.</p>
       </div>
+      <div class="coc">
+        <p>
+          PyCon PH 2014 is dedicated to a harassment-free conference experience for everyone.<br>
+          <a href="/pages/code-of-conduct.html">Read our anti-harassment policy.</a>
+        </p>
+      </div>
     </div>
   </div>
 </section>
-<!--
 <section id="pycon-ph-2012" class="pycon-ph-2012">
   <div class="row">
     <div class="large-12 columns">
       <h3>PyCon PH 2012</h3>
       <div class="row">
         <div class="large-8 columns">
-          <p>Ang kanyang malas na liwanag ng himala ay itinaksil ng pinaka-maliwanag na tagumpay.
-          Sabagay, ang pangalan ng panganay ay itinakda ng pinaka-matipuno na kapatid. Ang
-          pinaka-malumbay na kaibigan ng matanda ay pinanaw ng aking ibon.</p>
-          <p>Para saatin, ang aking habagat ng reyna ay isinulat ng ating pinaka-malakas na kasama.
-          Ang kanyang tinik ng kapatid ay binawi ng aking pinaka-masakim na tauhan. Subalit, ang
-          ating pinaka-malumbay na pangalan ng bunso ay itinaksil ng pinaka-malas na panganay. Ang
-          kanyang pinaka-busilak na liwanag ng bato ay binago ng pinaka-maliwanag na lupa. Ang
-          pinaka-maganda na dilim ng hangin ay ipinalabas ng pamahalaan. Ang pinaka-matipuno na
-          habagat ng pangamba ay pinili ng mga pinaka-malakas na himala. Ang aking tinik ng tagumpay
-          ay tinangkilik ng ating makhata.</p>
+          <p>
+            The first Python Conference in the Philippines was held last June 30 to July 1 2012 in UP
+            Diliman. Spearheaded by Frank and Ann Pohlmann of Auberon Solutions, it was a huge success
+            in spite of a short amount of time we had for the preparation. The conference was graced
+            upon representatives from the Python Software Foundation (PSF) and a turnout of roughly
+            240 students and professionals across the country. It was truly an inspiring event with a
+            diverse audience and a distinct spirit of volunteerism that made it happen.
+          </p>
         </div>
         <div class="large-4 columns">
           <ul class="large-block-grid-2">
             <li>
               <ul class="no-bullet">
-                <li>Participants</li>
-                <li>Speakers</li>
+                <li><strong>Participants</strong></li>
+                <li><strong>Speakers</strong></li>
               </ul>
             </li>
             <li>
               <ul class="no-bullet">
-                <li>300+</li>
+                <li>240</li>
                 <li>
                   <ul class="no-bullet">
                     <li>Audrey Roy</li>
@@ -112,7 +122,6 @@
     </div>
   </div>
 </section>
--->
 <section id="date-and-venue" class="date-and-venue">
   <div class="row">
     <div class="large-8 columns large-centered">
@@ -227,18 +236,4 @@
     </div>
   </div>
 </section>
-<footer>
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="links">
-        Organized by
-        <a href="http://python.ph">Python Philippines Inc.</a>
-        &mdash;
-        <a href="https://www.facebook.com/groups/pythonph">Facebook</a>
-        &mdash;
-        <a href="https://github.com/pythonph">Github</a>
-      </div>
-    </div>
-  </div>
-</footer>
 {% endblock %}
