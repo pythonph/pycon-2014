@@ -2,7 +2,7 @@ body, input, textarea, select {
   font: 18px/1.5 Quattrocento Sans, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, button {
+h1, h2, h3, h4, h5, h6, .button {
   font-family: Raleway, sans-serif;
 }
 
@@ -14,18 +14,17 @@ a:hover {
   color: #5a9fd4;
 }
 
-button, .button {
+.button {
   background-color: #ffd43b;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
-  border: 0;
   color: #222;
   font-weight: 400;
 }
 
-button:hover, .button:hover {
+.button:hover {
   background-color: #5a9fd4;
 }
 
@@ -69,7 +68,7 @@ footer .links a:hover {
 }
 
 .index header h2 {
-  font-size: 64px;
+  font-size: 68px;
   letter-spacing: 5px;
 }
 
@@ -125,7 +124,12 @@ footer .links a:hover {
 
 .pycon-ph-2012 {
   padding: 5em 0;
-  background-color: #eee;
+  background: #eee url(/images/pyconph2012/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.pycon-ph-2012 .photos img {
+  border: 3px #eee solid; 
 }
 
 .tickets {
