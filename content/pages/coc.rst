@@ -15,7 +15,7 @@ unwelcome sexual attention. Participants asked to stop any harassing behavior ar
 comply immediately.
 
 If a participant engages in harassing behavior, the conference organizers may take any action they
-deem appropriate, including warning the offender or expulsion from the conference [with no refund].
+deem appropriate, including warning the offender or expulsion from the conference with no refund.
 If you are being harassed, notice that someone else is being harassed, or have any other concerns,
 please contact a member of conference staff immediately.
 
