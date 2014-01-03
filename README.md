@@ -15,8 +15,8 @@ Develop
 $ ./develop_server.sh start
 ```
 
-Deployer
---------
+Push to deploy
+--------------
 
 Run deployer server
 
