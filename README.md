@@ -21,7 +21,7 @@ Deployer
 Run deployer server
 
 ```sh
-$ PORT=<port> SECRET=<secret> python ./deployer.py
+$ PORT=<port> SECRET=<secret> ROOT=/srv/pycon python ./deployer.py
 ```
 
 Then add a service hook at Github: `http://<host>/<secret>`
