@@ -17,12 +17,8 @@ def post(secret):
     print('Deploying...')
     payload = json.loads(request.form['payload'])
     branch = payload.get('ref').split('/')[2]
-    cmds = [
-      'rm -rf output/',
-      'pelican content',
-      'rsync -r -m -h --delete --progress output/ {root}/{branch}',
-    ]
-    print(check_output(' && '.join(cmds).format(
+    cmd = 'pelican -d -o {root}/{branch} content'
+    print(check_output(cmd.format(
       root=os.environ.get('ROOT', '/srv/pelican'),
       branch=branch,
     ), shell=True))
