@@ -1,5 +1,7 @@
+from __future__ import print_function
+
 import os
-from subprocess import call
+from subprocess import check_output
 
 from flask import abort, Flask, jsonify, request
 
@@ -16,7 +18,7 @@ def post(secret):
     'pelican content',
     'rsync -r -m -h --delete --progress output/ /srv/pyconph/{branch}',
   ]
-  call(' && '.join(cmds).format(branch=branch), shell=True)
+  print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
   return jsonify(dict(ok=True))
 
 
