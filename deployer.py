@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 import os
+import sys
 from subprocess import check_output
 from traceback import print_exc
 
@@ -23,7 +24,7 @@ def post(secret):
     ]
     print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
   except:
-    traceback.print_exc()
+    traceback.print_exc(file=sys.stderr)
     raise
   return jsonify(dict(ok=True))
 
