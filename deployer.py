@@ -4,7 +4,7 @@ import os
 import traceback
 from subprocess import check_output
 
-from flask import abort, Flask, jsonify, request, json
+from flask import abort, Flask, json, jsonify, request
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ def post(secret):
     cmds = [
       'rm -rf output/',
       'pelican content',
-      'rsync -r -m -h --delete --progress output/ /srv/pyconph/{branch}',
+      'rsync -r -m -h --delete --progress output/ /srv/pycon/{branch}',
     ]
     print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
   except Exception:
