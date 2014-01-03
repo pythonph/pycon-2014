@@ -20,9 +20,12 @@ def post(secret):
     cmds = [
       'rm -rf output/',
       'pelican content',
-      'rsync -r -m -h --delete --progress output/ /srv/pycon/{branch}',
+      'rsync -r -m -h --delete --progress output/ {root}/{branch}',
     ]
-    print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
+    print(check_output(' && '.join(cmds).format(
+      root=os.environ.get('ROOT', '/srv/pelican'),
+      branch=branch,
+    ), shell=True))
   except Exception:
     traceback.print_exc()
     raise
@@ -31,4 +34,3 @@ def post(secret):
 
 if __name__ == '__main__':
   app.run(port=int(os.environ.get('PORT', 5000)))
-
