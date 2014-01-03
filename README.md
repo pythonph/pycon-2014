@@ -15,8 +15,13 @@ Develop
 $ ./develop_server.sh start
 ```
 
-Publish
--------
+Deployer
+--------
+
+Run deployer server
+
 ```sh
-$ ./publish.sh
+$ PORT=<port> SECRET=<secret> python ./deployer.py
 ```
+
+Then add a service hook at Github: `http://<host>/<secret>`
