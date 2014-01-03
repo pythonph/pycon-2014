@@ -1,10 +1,10 @@
 from __future__ import print_function
 
 import os
+import traceback
 from subprocess import check_output
-from traceback import print_exc
 
-from flask import abort, Flask, jsonify, request
+from flask import abort, Flask, jsonify, request, json
 
 app = Flask(__name__)
 
@@ -15,15 +15,16 @@ def post(secret):
     abort(403)
   try:
     print('Deploying...')
-    branch = request.json.get('ref').split('/')[2]
+    payload = json.loads(request.form['payload'])
+    branch = payload.get('ref').split('/')[2]
     cmds = [
-      'rm -r output/'
+      'rm -rf output/',
       'pelican content',
       'rsync -r -m -h --delete --progress output/ /srv/pyconph/{branch}',
     ]
     print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
-  except:
-    print(traceback.format_exc())
+  except Exception:
+    traceback.print_exc()
     raise
   return jsonify(dict(ok=True))
 
