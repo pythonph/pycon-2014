@@ -12,13 +12,17 @@ app = Flask(__name__)
 def post(secret):
   if secret != os.environ['SECRET']:
     abort(403)
-  branch = request.json.get('ref').split('/')[2]
-  cmds = [
-    'rm -r output/'
-    'pelican content',
-    'rsync -r -m -h --delete --progress output/ /srv/pyconph/{branch}',
-  ]
-  print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
+  try:
+    branch = request.json.get('ref').split('/')[2]
+    cmds = [
+      'rm -r output/'
+      'pelican content',
+      'rsync -r -m -h --delete --progress output/ /srv/pyconph/{branch}',
+    ]
+    print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
+  except Exception as e:
+    print(str(e))
+    raise
   return jsonify(dict(ok=True))
 
 
