@@ -13,6 +13,7 @@ def post(secret):
   if secret != os.environ['SECRET']:
     abort(403)
   try:
+    print('Deploying...')
     branch = request.json.get('ref').split('/')[2]
     cmds = [
       'rm -r output/'
@@ -21,7 +22,7 @@ def post(secret):
     ]
     print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
   except Exception as e:
-    print(str(e))
+    print('Error: {}'.format(str(e)))
     raise
   return jsonify(dict(ok=True))
 
