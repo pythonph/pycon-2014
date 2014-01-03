@@ -8,7 +8,7 @@ from flask import abort, Flask, jsonify, request
 app = Flask(__name__)
 
 
-@app.route('/<secret>')
+@app.route('/<secret>', methods=['POST'])
 def post(secret):
   if secret != os.environ['SECRET']:
     abort(403)
