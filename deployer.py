@@ -2,6 +2,7 @@ from __future__ import print_function
 
 import os
 from subprocess import check_output
+from traceback import print_exc
 
 from flask import abort, Flask, jsonify, request
 
@@ -21,8 +22,8 @@ def post(secret):
       'rsync -r -m -h --delete --progress output/ /srv/pyconph/{branch}',
     ]
     print(check_output(' && '.join(cmds).format(branch=branch), shell=True))
-  except Exception as e:
-    print('Error: {}'.format(str(e)))
+  except:
+    traceback.print_exc()
     raise
   return jsonify(dict(ok=True))
 
