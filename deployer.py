@@ -1,7 +1,6 @@
 from __future__ import print_function
 
 import os
-import traceback
 from subprocess import check_output
 
 from flask import abort, Flask, json, jsonify, request
@@ -13,18 +12,13 @@ app = Flask(__name__)
 def post(secret):
   if secret != os.environ['SECRET']:
     abort(403)
-  try:
-    print('Deploying...')
-    payload = json.loads(request.form['payload'])
-    branch = payload.get('ref').split('/')[2]
-    cmd = 'pelican -d -o {root}/{branch} content'
-    print(check_output(cmd.format(
-      root=os.environ.get('ROOT', '/srv/pelican'),
-      branch=branch,
-    ), shell=True))
-  except Exception:
-    traceback.print_exc()
-    raise
+  payload = json.loads(request.form['payload'])
+  branch = payload.get('ref').split('/')[2]
+  cmd = 'pelican -d -o {root}/{branch} content'
+  print(check_output(cmd.format(
+    root=os.environ.get('ROOT', '/srv/pelican'),
+    branch=branch,
+  ), shell=True))
   return jsonify(dict(ok=True))
 
 
