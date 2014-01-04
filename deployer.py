@@ -17,9 +17,14 @@ def sh(cmd, **kwargs):
 def deploy(secret):
   if secret != os.environ['SECRET']:
     abort(403)
+    
   payload = json.loads(request.form['payload'])
   branch = payload.get('ref').split('/')[2]
-  sh('git checkout -f')
+  
+  sh(
+    'git checkout -f {branch}',
+    branch=branch,
+  )
   sh(
     'pelican -d -o {root}/{branch} content',
     root=os.environ.get('ROOT', '/srv/pelican'),
