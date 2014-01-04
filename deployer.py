@@ -1,7 +1,7 @@
 import os
 from subprocess import check_output
 
-from flask import abort, Flask, json, jsonify, request
+from flask import Flask, json, jsonify, request
 
 app = Flask(__name__)
 
@@ -10,11 +10,8 @@ def sh(cmd, **kwargs):
   app.logger.info(check_output(cmd.format(**kwargs), shell=True))
 
 
-@app.route('/<secret>', methods=['POST'])
+@app.route('/<{}>'.format(os.environ['SECRET']), methods=['POST'])
 def deploy(secret):
-  if secret != os.environ['SECRET']:
-    abort(403)
-
   payload = json.loads(request.form['payload'])
   branch = payload.get('ref').split('/')[2]
 
