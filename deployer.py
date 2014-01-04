@@ -14,7 +14,7 @@ def sh(cmd, **kwargs):
 
 
 @app.route('/<secret>', methods=['POST'])
-def post(secret):
+def deploy(secret):
   if secret != os.environ['SECRET']:
     abort(403)
   payload = json.loads(request.form['payload'])
