@@ -5,7 +5,12 @@ from subprocess import check_output
 
 from flask import abort, Flask, json, jsonify, request
 
+
 app = Flask(__name__)
+
+
+def sh(cmd, **kwargs):
+  print(check_output(cmd.format(**kwargs), shell=True))
 
 
 @app.route('/<secret>', methods=['POST'])
@@ -14,11 +19,13 @@ def post(secret):
     abort(403)
   payload = json.loads(request.form['payload'])
   branch = payload.get('ref').split('/')[2]
-  cmd = 'pelican -d -o {root}/{branch} content'
-  print(check_output(cmd.format(
+  sh('git checkout -f')
+  sh(
+    'pelican -d -o {root}/{branch} content',
     root=os.environ.get('ROOT', '/srv/pelican'),
     branch=branch,
-  ), shell=True))
+  )
+
   return jsonify(dict(ok=True))
 
 
