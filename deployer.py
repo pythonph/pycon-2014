@@ -22,7 +22,8 @@ def deploy(secret):
   branch = payload.get('ref').split('/')[2]
   
   sh(
-    'git checkout -f {branch}',
+    'git pull {remote} {branch}',
+    remote=os.environ.get('REMOTE', 'origin'),
     branch=branch,
   )
   sh(
