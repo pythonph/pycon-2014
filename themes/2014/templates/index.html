@@ -1,10 +1,21 @@
 {% extends "base.html" %}
 
 {% block js %}
+{{ super() }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
 <script src="/theme/js/jquery.sticky-kit.min.js"></script>
-<script>skrollr.init();</script>
-<script>$('nav').stick_in_parent();</script>
+<script>
+  function resize() {
+    $('header').css('height', window.innerHeight);
+    var $withLogo = $('header .with-logo');
+    $withLogo.css('top', (window.innerHeight - $withLogo.height()) / 2);
+    $(document.body).trigger('sticky_kit:recalc');
+  }
+  window.onresize = resize;
+  resize();
+  $('nav').stick_in_parent();
+  skrollr.init();
+</script>
 {% endblock %}
 
 {% block content %}

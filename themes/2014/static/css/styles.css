@@ -52,7 +52,7 @@ footer .links a:hover {
   background: url(../images/splash.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
-  padding: 300px 0;
+  display: relative;
 }
 
 .index header h1,
@@ -77,7 +77,8 @@ footer .links a:hover {
 }
 
 .index header .with-logo {
-  display: inline-block;
+  width: 100%;
+  position: absolute;
   background: url(../images/pythonph.png) no-repeat left center;
   padding-left: 284px;
 }
