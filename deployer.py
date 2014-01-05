@@ -10,8 +10,8 @@ def sh(cmd, **kwargs):
   app.logger.info(check_output(cmd.format(**kwargs), shell=True))
 
 
-@app.route('/<{}>'.format(os.environ['SECRET']), methods=['POST'])
-def deploy(secret):
+@app.route('/{}'.format(os.environ['SECRET']), methods=['POST'])
+def deploy():
   payload = json.loads(request.form['payload'])
   branch = payload.get('ref').split('/')[2]
 
