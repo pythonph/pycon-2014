@@ -49,6 +49,10 @@ def deploy(repo_id):
     branch=branch,
   )
   sh(
+    'git checkout -f {branch}',
+    branch=branch,
+  )
+  sh(
     'pelican -d -o {output} content',
     output=repo['output'],
     branch=branch,
