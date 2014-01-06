@@ -35,12 +35,15 @@ app = Flask(__name__)
 
 
 def sh(cmd, **kwargs):
-  app.logger.info((cmd + '\n' + subprocess.check_output(
-    cmd.format(**kwargs),
+  cmd = cmd.format(**kwargs)
+  output = subprocess.check_output(
+    cmd,
     stderr=subprocess.STDOUT,
     shell=True,
-  )).replace('\n', '\n> '))
-
+  )
+  app.logger.info(cmd)
+  app.logger.info('\n'.join([' > ' + l for l in output.split('\n')]))
+  
 
 @app.route('/<repo_id>/{}'.format(os.environ['SECRET']), methods=['POST'])
 def deploy(repo_id):
