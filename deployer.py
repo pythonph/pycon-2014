@@ -2,7 +2,7 @@
 Simple web server that listens for Github webhooks to implement push-to-deploy
 with Pelican static sites
 
-Settings are loaded from a json file except for SECRET which should be an 
+Settings are loaded from a json file except for SECRET which should be an
 environment variable
 
 Example `deployer.json`
@@ -25,17 +25,20 @@ $ SECRET=thisisasecret python ./pelican_deployer.py deployer.json
 Add http://<deployer_host>/mysite/thisisasecret as a webhook url and you're done
 """
 import os
+import subprocess
 import sys
-from subprocess import check_output
 
 from flask import Flask, json, jsonify, request
-
 
 app = Flask(__name__)
 
 
 def sh(cmd, **kwargs):
-  app.logger.info(check_output(cmd.format(**kwargs), shell=True))
+  app.logger.info(subprocess.check_output(
+    cmd.format(**kwargs),
+    stderr=subprocess.STDOUT,
+    shell=True,
+  ))
 
 
 @app.route('/<repo_id>/{}'.format(os.environ['SECRET']), methods=['POST'])
@@ -64,3 +67,4 @@ if __name__ == '__main__':
   with open(sys.argv[1]) as f:
     app.config.update(**json.load(f))
   app.run(port=int(os.environ.get('PORT', 5000)))
+
