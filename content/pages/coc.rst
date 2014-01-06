@@ -26,10 +26,21 @@ Conference staff will be happy to help participants contact hotel/venue security
 enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the
 duration of the conference. We value your attendance.
 
-security@python.ph
 
-.. [Phone number for conference security or organizers]
-.. [Phone number for hotel/venue security]
+.. list-table::
+   :header-rows: 0
+   
+   * - Python.PH, Inc.
+     - | security@python.ph
+       | +632 916 600 7974
+       | *Look for Ferdinand Samaniego*
+   * - DLSU CCS
+     - 536 0278
+   * - DLSU Security and Safety Office
+     - 525 7159
+   * - DLSU Health Services Office (Clinic)
+     - 596 0252
+
 .. [Local law enforcement]
 .. [Local sexual assault hot line]
 .. [Local emergency and non-emergency medical]
