@@ -153,6 +153,7 @@ footer .links a:hover {
 }
 
 .cal {
+  border: 1px #5a9fd4 solid;
   font-family: Raleway, sans-serif;
   display: inline-block;
   width: 10em;
