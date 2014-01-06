@@ -1,0 +1,9 @@
+{
+	"repos": {
+		"pycon": {
+			"root": "/home/marksteve/pycon",
+			"output": "/srv/pycon/{branch}"
+		}
+	},
+	"port": 5000
+}
