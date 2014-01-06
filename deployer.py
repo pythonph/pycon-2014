@@ -41,7 +41,7 @@ def sh(cmd, **kwargs):
     stderr=subprocess.STDOUT,
     shell=True,
   )
-  app.logger.info(cmd)
+  app.logger.info('\n' + cmd)
   app.logger.info('\n'.join([' > ' + l for l in output.split('\n')]))
   
 
