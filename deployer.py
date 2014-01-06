@@ -52,12 +52,12 @@ def deploy(repo_id):
   repo = app.config['repos'][repo_id]
   os.chdir(repo['root'])
   sh(
-    'git pull {remote} {branch}',
-    remote=repo.get('remote', 'origin'),
+    'git checkout {branch}',
     branch=branch,
   )
   sh(
-    'git checkout -f {branch}',
+    'git pull --ff-only {remote} {branch}',
+    remote=repo.get('remote', 'origin'),
     branch=branch,
   )
   sh(
