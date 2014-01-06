@@ -24,6 +24,7 @@ $ SECRET=thisisasecret python ./pelican_deployer.py deployer.json
 
 Add http://<deployer_host>/mysite/thisisasecret as a webhook url and you're done
 """
+import logging
 import os
 import subprocess
 import sys
@@ -34,11 +35,11 @@ app = Flask(__name__)
 
 
 def sh(cmd, **kwargs):
-  app.logger.info(subprocess.check_output(
+  app.logger.info((cmd + '\n' + subprocess.check_output(
     cmd.format(**kwargs),
     stderr=subprocess.STDOUT,
     shell=True,
-  ))
+  )).replace('\n', '\n> '))
 
 
 @app.route('/<repo_id>/{}'.format(os.environ['SECRET']), methods=['POST'])
@@ -66,5 +67,7 @@ def deploy(repo_id):
 if __name__ == '__main__':
   with open(sys.argv[1]) as f:
     app.config.update(**json.load(f))
+  app.logger.addHandler(logging.StreamHandler())
+  app.logger.setLevel(logging.INFO)
   app.run(port=int(os.environ.get('PORT', 5000)))
 
