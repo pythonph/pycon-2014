@@ -142,7 +142,11 @@ footer .links a:hover {
 }
 
 .date-and-venue {
+  font-family: Lora, serif;
+  background: url(../images/dlsu.jpg) no-repeat;
+  background-size: cover;
   padding: 5em 0;
+  position: relative;
 }
 
 .date-and-venue h3 {
@@ -152,9 +156,14 @@ footer .links a:hover {
   font-weight: 400;
 }
 
+.date-and-venue .row {
+  padding: 2em;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+}
+
 .cal {
-  border: 1px #5a9fd4 solid;
-  font-family: Raleway, sans-serif;
+  border: 1px #9c9 solid;
   display: inline-block;
   width: 10em;
   text-align: center;
@@ -169,7 +178,7 @@ footer .links a:hover {
 .cal .m,
 .cal .y {
   line-height: 2em;
-  background-color: #5a9fd4;
+  background-color: #9c9;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
@@ -178,6 +187,14 @@ footer .links a:hover {
 .cal .d {
   font-size: 3em;
   line-height: 2;
+}
+
+.date-and-venue .attribution {
+  color: #9c9;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  font-style: italic;
 }
 
 .get-involved {
