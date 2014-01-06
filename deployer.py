@@ -25,6 +25,7 @@ $ SECRET=thisisasecret python ./pelican_deployer.py deployer.json
 Add http://<deployer_host>/mysite/thisisasecret as a webhook url and you're done
 """
 import os
+import sys
 from subprocess import check_output
 
 from flask import Flask, json, jsonify, request
@@ -60,6 +61,6 @@ def deploy(repo_id):
 
 
 if __name__ == '__main__':
-  with open('deployer.json') as f:
+  with open(sys.argv[1]) as f:
     app.config.update(**json.load(f))
   app.run(port=int(os.environ.get('PORT', 5000)))
