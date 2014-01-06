@@ -54,8 +54,7 @@ def deploy(repo_id):
   )
   sh(
     'pelican -d -o {output} content',
-    output=repo['output'],
-    branch=branch,
+    output=repo['output'].format(branch=branch, **payload),
   )
   return jsonify(dict(ok=True))
 
