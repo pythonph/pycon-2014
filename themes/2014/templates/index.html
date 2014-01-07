@@ -21,7 +21,10 @@
 {% block content %}
 <div id="skrollr-body">
 
-<header data-top="background-position-y:50%" data-top-bottom="background-position-y: 100%">
+<header
+  data-start="background-position-y:0%"
+  data-top-bottom="background-position-y: 100%"
+  >
   <div class="text">
     <div class="with-logo">
       <h1>PyCon</h1>
@@ -68,7 +71,10 @@
     </div>
   </div>
 </section>
-<section id="pycon-ph-2012" class="pycon-ph-2012">
+<section id="pycon-ph-2012" class="pycon-ph-2012"
+  data-bottom-top="background-position-y:0%"
+  data-top-bottom="background-position-y:100%"
+  >
   <div class="row">
     <div class="large-12 columns">
       <div class="row">
@@ -110,7 +116,10 @@
     </div>
   </div>
 </section>
-<section id="date-and-venue" class="date-and-venue">
+<section id="date-and-venue" class="date-and-venue"
+  data-bottom-top="background-position-x:0%"
+  data-top-bottom="background-position-x: 100%"
+  >
   <div class="row">
     <h3>Date and Venue</h3>
     <div class="details large-4 columns">
