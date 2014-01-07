@@ -34,7 +34,7 @@ duration of the conference. We value your attendance.
      - | security@python.ph
        | +632 916 600 7974
        | *Look for Ferdinand Samaniego*
-   * - DLSU CCS
+   * - DLSU College of Computer Studies
      - 536 0278
    * - DLSU Security and Safety Office
      - 525 7159
