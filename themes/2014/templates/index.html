@@ -7,8 +7,8 @@
 <script>
   function resize() {
     $('header').css('height', window.innerHeight);
-    var $withLogo = $('header .with-logo');
-    $withLogo.css('top', (window.innerHeight - $withLogo.height()) / 2);
+    var $headerText = $('header .text');
+    $headerText.css('top', (window.innerHeight - $headerText.innerHeight()) / 2);
     $(document.body).trigger('sticky_kit:recalc');
   }
   window.onresize = resize;
@@ -19,19 +19,20 @@
 {% endblock %}
 
 {% block content %}
+<div id="skrollr-body">
+
 <header data-top="background-position-y:50%" data-top-bottom="background-position-y: 100%">
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="with-logo">
-        <h1>PyCon</h1>
-        <h2>Philippines <span>2014</span></h2>
-      </div>
+  <div class="text">
+    <div class="with-logo">
+      <h1>PyCon</h1>
+      <h2>Philippines <span>2014</span></h2>
     </div>
   </div>
 </header>
 <nav
   data-center-center="color:rgb(90,159,212);background-color:rgb(255,255,255)"
   data-top="color:rgb(255,255,255);background-color:rgb(90,159,212)"
+  class="hide-for-small-only"
   >
   <div class="row">
     <div class="large-12 columns">
@@ -96,7 +97,7 @@
           </ul>
         </div>
       </div>
-      <div class="photos">
+      <div class="photos hide-for-small-only">
         <ul class="clearing-thumbs" data-clearing>
           <li><a href="/images/pyconph2012/1.jpg"><img src="/images/pyconph2012/th/1.jpg"></a></li>
           <li><a href="/images/pyconph2012/2.jpg"><img src="/images/pyconph2012/th/2.jpg"></a></li>
@@ -112,7 +113,7 @@
 <section id="date-and-venue" class="date-and-venue">
   <div class="row">
     <h3>Date and Venue</h3>
-    <div class="date large-4 columns">
+    <div class="details large-4 columns">
       <div class="cal">
         <span class="m">February</span>
         <span class="d">22-23</span>
@@ -126,8 +127,11 @@
         <a href="http://www.dlsu.edu.ph">http://www.dlsu.edu.ph</a>
       </address>
     </div>
-    <div class="venue large-8 columns">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x3397c97f2ea0318b%3A0x8e8eae0957d17c38!2sDe+La+Salle+University%2C+Taft+Avenue%2C+Manila%2C+Philippines!5e0!3m2!1sen!2s!4v1388981675876" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    <div class="map large-8 columns">
+      <iframe class="hide-for-small-only" src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x3397c97f2ea0318b%3A0x8e8eae0957d17c38!2sDe+La+Salle+University%2C+Taft+Avenue%2C+Manila%2C+Philippines!5e0!3m2!1sen!2s!4v1388981675876" width="600" height="450" frameborder="0" style="border:0"></iframe>
+      <p class="show-for-small-only">
+        <a href="https://goo.gl/maps/zHvgQ">View Map</a>
+      </p>
     </div>
   </div>
   <div class="attribution">
@@ -226,4 +230,10 @@
     </div>
   </div>
 </section>
+
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+</div>
 {% endblock %}

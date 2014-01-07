@@ -15,6 +15,7 @@ a:hover {
 }
 
 .button {
+  border-radius: 0;
   background-color: #ffd43b;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -34,7 +35,7 @@ footer {
 }
 
 footer .links {
-  font-size: 80%;
+  font-size: 0.8em;
 }
 
 footer .links ,
@@ -52,43 +53,49 @@ footer .links a:hover {
   background: url(../images/splash.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
-  display: relative;
+  position: relative;
 }
 
-.index header h1,
-.index header h2 {
+.index header .text {
+  width: 100%;
+  position: absolute;
+}
+
+.with-logo {
+  max-width: 62.5rem;
+  display: inline-block;
+  background: url(../images/pythonph.png) no-repeat left center;
+  padding-left: 16em;
+}
+
+.with-logo h1,
+.with-logo h2 {
   color: white;
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
 }
-.index header h1 {
-  font-size: 200px;
+.with-logo h1 {
+  font-size: 12em;
   font-weight: 900;
 }
 
-.index header h2 {
-  font-size: 68px;
-  letter-spacing: 5px;
+.with-logo h2 {
+  font-size: 4em;
+  letter-spacing: 0.09em;
 }
 
-.index header h2 span {
-  font-size: 77px;
-}
-
-.index header .with-logo {
-  width: 100%;
-  position: absolute;
-  background: url(../images/pythonph.png) no-repeat left center;
-  padding-left: 284px;
+.with-logo h2 span {
+  font-size: 1.1em;
 }
 
 .index nav {
   background-color: #5a9fd4;
+  padding: 1em 0;
   z-index: 10;
 }
 
-.index nav ul li {
+.index nav li {
   padding-bottom: 0 !important;
   text-align: center;
   text-transform: uppercase;
@@ -98,11 +105,10 @@ footer .links a:hover {
 .index nav li a {
   color: inherit;
   display: inline-block;
-  line-height: 2em;
+  line-height: 2;
   padding: 0 0.5em;
   border: 3px solid;
   width: 100%;
-  margin: 1em 0;
 }
 
 .index nav li a:hover {
@@ -115,7 +121,7 @@ footer .links a:hover {
 }
 
 .about .description {
-  font-size: 150%;
+  font-size: 1.5em;
 }
 
 .about .coc {
@@ -162,6 +168,10 @@ footer .links a:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 
+.date-and-venue .details {
+  margin-bottom: 2em;
+}
+
 .cal {
   border: 1px #9c9 solid;
   display: inline-block;
@@ -177,7 +187,7 @@ footer .links a:hover {
 
 .cal .m,
 .cal .y {
-  line-height: 2em;
+  line-height: 2;
   background-color: #9c9;
   font-weight: bold;
   text-transform: uppercase;
@@ -191,6 +201,7 @@ footer .links a:hover {
 
 .date-and-venue .attribution {
   color: #9c9;
+  line-height: 1;
   position: absolute;
   bottom: 0.5em;
   right: 0.5em;
@@ -207,6 +218,30 @@ footer .links a:hover {
   color: white;
 }
 
+/* Media queries */
+
+@media only screen and (max-width: 40em) {
+  section {
+    padding: 3em 1.5em !important
+  }
+  .with-logo {
+    padding: 18em 0 0 0;
+    background-position: center top;
+  }
+  .with-logo h1 {
+    font-size: 4em;
+  }
+  .with-logo h2 {
+    font-size: 1.33em;
+  }
+  .date-and-venue {
+    text-align: center;
+  }
+  .date-and-venue .row {
+    padding: 1em 0;
+  }
+}
+
 /* Pages */
 
 .page header {
@@ -215,5 +250,5 @@ footer .links a:hover {
 }
 
 .page header h1 {
-  font-size: 150%;
+  font-size: 1.5em;
 }
