@@ -145,8 +145,9 @@ footer .links a:hover {
 }
 
 .speakers h3 {
-  font-size: 3em;
-  margin-bottom: 1.5em;
+  border-bottom: 1px #eee solid;
+  padding-bottom: 1em;
+  margin: 0 10em 2em 10em;
 }
 
 .speakers h4 {
@@ -167,7 +168,7 @@ footer .links a:hover {
   font-family: Lora, serif;
   background: url(../images/dlsu.jpg) no-repeat;
   background-size: cover;
-  padding: 15em 0;
+  padding: 10em 0;
   position: relative;
 }
 
@@ -176,6 +177,7 @@ footer .links a:hover {
   border-bottom: 1px solid #111;
   margin-bottom: 2em;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .date-and-venue .row {
@@ -228,8 +230,61 @@ footer .links a:hover {
   padding: 5em 0;
 }
 
-.tickets h4 {
-  font-weight: 400;
+.tickets h3 {
+  margin-bottom: 1em;
+}
+
+.eventbrite {
+  height: 25em;
+}
+
+.eventbrite iframe {
+  height: 100%;
+}
+
+.sponsors {
+  padding: 5em 0 10em 0;
+  text-align: center;
+}
+
+.sponsors h3 {
+  margin-bottom: 2em;
+}
+
+.sponsors h4 {
+  margin-bottom: 2em;
+}
+
+.sponsors .organizers {
+  margin-bottom: 4em;
+}
+
+.sponsors .organizers .logo {
+  line-height: 16em;
+}
+
+.sponsors-grid.row {
+  margin-bottom: 2em;
+}
+
+.sponsors-grid .platinum img {
+  max-width: 14em;
+  max-height: 14em;
+}
+
+.sponsors-grid .gold img {
+  max-width: 12em;
+  max-height: 12em;
+}
+
+.sponsors-grid .silver img {
+  max-width: 10em;
+  max-height: 10em;
+}
+
+.sponsors-grid .bronze img {
+  max-width: 8em;
+  max-height: 8em;
 }
 
 .get-involved {
