@@ -263,26 +263,58 @@ footer .links a:hover {
   line-height: 16em;
 }
 
-.sponsors-grid .columns {
+.sponsors-list ul {
+  padding-bottom: 2em;
   margin-bottom: 2em;
 }
 
-.sponsors-grid .platinum img {
+.sponsors-list h4 {
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  margin: 0 auto 2em auto;
+  padding-bottom: 1em;
+}
+
+.sponsors-list .platinum h4 {
+  border-color: #e5e4e2;
+  color: #e5e4e2;
+}
+
+.sponsors-list .gold h4 {
+  border-color: gold;
+  color: gold;
+}
+
+.sponsors-list .silver h4 {
+  border-color: silver;
+  color: silver;
+}
+
+.sponsors-list .bronze h4 {
+  border-color: #cd7f32;
+  color: #cd7f32;
+}
+
+.sponsors-list .platinum img {
   max-width: 14em;
   max-height: 14em;
 }
 
-.sponsors-grid .gold img {
+.sponsors-list .gold img {
   max-width: 12em;
   max-height: 12em;
 }
 
-.sponsors-grid .silver img {
+.sponsors-list .silver img {
   max-width: 10em;
   max-height: 10em;
 }
 
-.sponsors-grid .bronze img {
+.sponsors-list .bronze img,
+.sponsors-list .partners img {
   max-width: 8em;
   max-height: 8em;
 }
