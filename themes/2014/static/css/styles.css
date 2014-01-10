@@ -263,7 +263,7 @@ footer .links a:hover {
   line-height: 16em;
 }
 
-.sponsors-grid.row {
+.sponsors-grid .columns {
   margin-bottom: 2em;
 }
 
@@ -312,6 +312,10 @@ footer .links a:hover {
   }
   .with-logo h2 {
     font-size: 1.33em;
+  }
+  .speakers h3 {
+    margin-left: 0;
+    margin-right: 0;
   }
   .date-and-venue {
     text-align: center;
