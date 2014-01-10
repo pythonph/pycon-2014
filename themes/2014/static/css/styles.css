@@ -136,15 +136,31 @@ footer .links a:hover {
 }
 
 .pycon-ph-2012 .photos img {
-  border: 3px #eee solid; 
+  border: 3px #eee solid;
 }
 
-.tickets {
+.speakers {
   padding: 5em 0;
+  text-align: center;
 }
 
-.tickets h4 {
-  font-weight: 400;
+.speakers h3 {
+  font-size: 3em;
+  margin-bottom: 1.5em;
+}
+
+.speakers h4 {
+  margin-bottom: 1em;
+}
+
+.speakers img {
+  border-radius: 128px;
+}
+
+.speakers .bio {
+  border-left: 1px #eee solid;
+  padding-left: 1em;
+  text-align: left;
 }
 
 .date-and-venue {
@@ -206,6 +222,14 @@ footer .links a:hover {
   bottom: 0.5em;
   right: 0.5em;
   font-style: italic;
+}
+
+.tickets {
+  padding: 5em 0;
+}
+
+.tickets h4 {
+  font-weight: 400;
 }
 
 .get-involved {
