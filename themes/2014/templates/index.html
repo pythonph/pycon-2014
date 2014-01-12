@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="/theme/css/index.css">
+{% endblock %}
+
 {% block js %}
 {{ super() }}
 <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
