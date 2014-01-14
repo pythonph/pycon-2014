@@ -214,10 +214,6 @@ nav li a:hover {
   line-height: 16em;
 }
 
-.sponsors-list ul {
-  margin-bottom: 2em;
-}
-
 .sponsors-list h4 {
   font-size: 1em;
   font-weight: 700;
@@ -249,26 +245,16 @@ nav li a:hover {
   color: #cd7f32;
 }
 
-.sponsors-list .platinum img {
-  max-width: 14em;
-  max-height: 14em;
+.sponsors-list .partners h4 {
+  text-shadow: 0;
 }
 
-.sponsors-list .gold img {
-  max-width: 12em;
-  max-height: 12em;
+.sponsors-list ul {
+  margin-bottom: 2em;
 }
 
-.sponsors-list .silver img {
-  max-width: 10em;
-  max-height: 10em;
-}
-
-.sponsors-list .bronze img,
-.sponsors-list .partners img {
-  max-width: 8em;
-  max-height: 8em;
-  text-shadow: none;
+.sponsors-list .logo a {
+  display: inline-block;
 }
 
 .get-involved {
