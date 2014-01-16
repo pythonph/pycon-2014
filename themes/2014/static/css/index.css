@@ -210,8 +210,15 @@ nav li a:hover {
   margin-bottom: 4em;
 }
 
-.sponsors .organizers .logo {
+.sponsors .write-up {
+  padding: 1em;
+  border: 1px #eee solid;
+  text-align: left;
+}
+
+.organizers .logo {
   line-height: 16em;
+  margin-bottom: 2em;
 }
 
 .sponsors-list h4 {
@@ -223,6 +230,10 @@ nav li a:hover {
   margin: 0 auto 2em auto;
   padding-bottom: 1em;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.sponsors-list .package {
+  margin-bottom: 4em;
 }
 
 .sponsors-list .platinum h4 {
@@ -247,10 +258,6 @@ nav li a:hover {
 
 .sponsors-list .partners h4 {
   text-shadow: 0;
-}
-
-.sponsors-list ul {
-  margin-bottom: 2em;
 }
 
 .sponsors-list .logo a {
