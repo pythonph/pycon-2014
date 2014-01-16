@@ -106,7 +106,13 @@ nav li a:hover {
 }
 
 .speakers img {
-  border-radius: 128px;
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+}
+
+.speakers .mrvaldez {
+  border: 1px solid;
 }
 
 .speakers .bio {
