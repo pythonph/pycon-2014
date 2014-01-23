@@ -50,6 +50,7 @@ nav li {
   padding-bottom: 0 !important;
   text-align: center;
   text-transform: uppercase;
+  font-size: 0.8em;
   font-weight: bold;
 }
 
@@ -119,6 +120,33 @@ nav li a:hover {
   border-left: 1px #eee solid;
   padding-left: 1em;
   text-align: left;
+}
+
+.schedule {
+  padding: 5em 0;
+}
+
+.schedule h3 {
+  border-bottom: 1px #eee solid;
+  margin-bottom: 1em;
+}
+
+.schedule table {
+  width: 100%;
+}
+
+.schedule ul {
+  margin: 0;
+  line-height: 1;
+}
+
+.schedule th,
+.schedule td {
+  vertical-align: top;
+}
+
+.schedule .panel {
+  font-size: 0.8em;
 }
 
 .date-and-venue {
