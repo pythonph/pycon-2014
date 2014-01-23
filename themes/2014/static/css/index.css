@@ -138,6 +138,7 @@ nav li a:hover {
 .schedule ul {
   margin: 0;
   line-height: 1;
+  font-size: 0.875rem;
 }
 
 .schedule th,
