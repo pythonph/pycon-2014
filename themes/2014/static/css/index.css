@@ -266,6 +266,10 @@ nav li a:hover {
   text-shadow: 0;
 }
 
+.sponsors-list .logo {
+  margin-top: 2em;
+}
+
 .sponsors-list .logo a {
   display: inline-block;
 }
