@@ -146,6 +146,10 @@ nav li a:hover {
   vertical-align: top;
 }
 
+.schedule th:first-child {
+  width: 15em;
+}
+
 .schedule .panel {
   font-size: 0.8em;
 }
