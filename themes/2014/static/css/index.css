@@ -137,7 +137,7 @@ nav li a:hover {
 
 .schedule ul {
   margin: 0;
-  line-height: 1;
+  line-height: 1.125rem;
   font-size: 0.875rem;
 }
 
@@ -148,6 +148,11 @@ nav li a:hover {
 
 .schedule th:first-child {
   width: 15em;
+}
+
+.schedule td:first-child {
+  font-family: Droid Sans Mono, monospace;
+  font-size: 0.6em;
 }
 
 .schedule .panel {
