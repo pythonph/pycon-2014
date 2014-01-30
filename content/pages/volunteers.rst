@@ -10,8 +10,8 @@ Volunteers
 .. raw:: html
 
   <h3>
+    <small>Conference Chair</small><br>
     Sony Valdez
-    <small>Conference Chair</small>
   </h3>
 
 Sony is the PyCon Philippines conference chair and the main person in charge. He’s responsible for setting the budget; monitoring expenses; and general oversight of all other committees; You can email him at shunyvaldez@gmail.com.
@@ -19,8 +19,8 @@ Sony is the PyCon Philippines conference chair and the main person in charge. He
 .. raw:: html
 
   <h3>
+    <small>Logistics Chair</small><br>
     Andrew Paulo Robillo
-    <small>Logistics Chair</small>
   </h3>
 
 Andrew has put countless hours into coordinating the logistics for PyCon Philippines 2014, including venue sourcing, selection, and preparation; arrangement of catering for snacks, meals, and drinks; hospitality, reception, and concierge services. You can reach him at secretariat@python.ph
@@ -28,8 +28,8 @@ Andrew has put countless hours into coordinating the logistics for PyCon Philipp
 .. raw:: html
 
   <h3>
+    <small>Design and Website Co-Chairs</small><br>
     Mark Steve Samson and Chad Estioco
-    <small>Design and Website Co-Chairs</small>
   </h3>
 
 Steve and Chad are the web admins and maintainers of the PyCon Philippines website. If you'd like to help, simply submit a pull request to the `pycon repo <https://github.com/pythonph/pycon>`_ with your changes.
@@ -39,8 +39,8 @@ Steve is also the person behind the design of the PyCon Philippines logo, t-shir
 .. raw:: html
 
   <h3>
+    <small>Security Chairs</small><br>
     Ferdinand Samaniego, Dian Leithon Isidro and Jerry Tieng
-    <small>Security Chairs</small>
   </h3>
 
 Ferdz, Dian and Jerry are responsible for ensuring that our Code of Conduct is enforced throughout the conference.
@@ -50,8 +50,8 @@ Ferdz, Dian and Jerry are responsible for ensuring that our Code of Conduct is e
 .. raw:: html
 
   <h3>
+    <small>Sponsorship and Community Relations Co-Chairs</small><br>
     Matt Lebrun and Micaela Reyes
-    <small>Sponsorship and Community Relations Co-Chairs</small>
   </h3>
 
 If you have any community relations or sponsorship questions, please email treasurer@python.ph or via Twitter (`@cr8ivecodesmith <https://twitter.com/cr8ivecodesmith>`_ and (`@codemickeycode <https://twitter.com/codemickeycode>`_)
