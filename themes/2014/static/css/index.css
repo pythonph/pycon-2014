@@ -141,6 +141,14 @@ nav li a:hover {
   font-size: 0.875rem;
 }
 
+.schedule .label {
+  height: 1.125rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 5em;
+}
+
 .schedule th,
 .schedule td {
   vertical-align: top;
