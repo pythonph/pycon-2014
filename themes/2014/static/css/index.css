@@ -238,11 +238,16 @@ nav li a:hover {
 }
 
 .eventbrite {
-  height: 30em;
+  height: 35em;
 }
 
 .eventbrite iframe {
   height: 100%;
+}
+
+.free-tickets {
+  margin-top: 5em;
+  text-align: center;
 }
 
 .sponsors {
