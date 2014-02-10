@@ -250,6 +250,12 @@ nav li a:hover {
   text-align: center;
 }
 
+.sold-out {
+  text-align: center;
+  border: 1px solid;
+  padding: 2em 0;
+}
+
 .sponsors {
   padding: 5em 0 10em 0;
   text-align: center;
