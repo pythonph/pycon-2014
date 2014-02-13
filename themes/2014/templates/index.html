@@ -8,9 +8,12 @@
 
 {% block js %}
 {{ super() }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.0.3/moment-timezone.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
 <script src="/theme/js/jquery.sticky-kit.min.js"></script>
 <script>
+
   function resize() {
     $('header').css('height', window.innerHeight);
     var $headerText = $('header .text');
@@ -21,6 +24,37 @@
   resize();
   $('nav').stick_in_parent();
   skrollr.init();
+
+  moment.tz.add({
+    "zones": {
+      "Asia/Manila": [
+        "-15:56 - LMT 1844_11_31 -15:56",
+        "8:4 - LMT 1899_4_11 8:4",
+        "8 Phil PH%sT 1942_4 8",
+        "9 - JST 1944_10 9",
+        "8 Phil PH%sT"
+      ]
+    },
+    "rules": {
+      "Phil": [
+        "1936 1936 10 1 7 0 0 1 S",
+        "1937 1937 1 1 7 0 0 0",
+        "1954 1954 3 12 7 0 0 1 S",
+        "1954 1954 6 1 7 0 0 0",
+        "1978 1978 2 22 7 0 0 1 S",
+        "1978 1978 8 21 7 0 0 0"
+      ]
+    },
+    "links": {}
+  });
+  var $countdown = $('.countdown');
+  var eventStart = moment('2014-02-22 08:00').tz('Asia/Manila');
+  function countdown() {
+    $countdown.text(eventStart.fromNow(true) + ' to go!');
+  }
+  setInterval(countdown, 1000);
+  countdown();
+
 </script>
 {% endblock %}
 
@@ -31,6 +65,7 @@
   data-start="background-position-y:0%"
   data-top-bottom="background-position-y: 100%"
   >
+  <div class="countdown"></div>
   <div class="text">
     <div class="with-logo">
       <h1>PyCon</h1>
