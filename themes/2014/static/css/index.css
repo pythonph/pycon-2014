@@ -7,21 +7,10 @@ header {
   position: relative;
 }
 
-header .countdown {
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  font-family: Raleway;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 0.5em 1em;
-  text-transform: uppercase;
-  width: 10em;
-}
-
 header .text {
   width: 100%;
   position: absolute;
+  color: white;
 }
 
 .with-logo {
@@ -50,6 +39,23 @@ header .text {
 
 .with-logo h2 span {
   font-size: 1.1em;
+}
+
+.countdown {
+  font-family: Raleway;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.social {
+  margin-top: 5em;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav {
