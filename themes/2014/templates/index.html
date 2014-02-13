@@ -11,19 +11,19 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.0.3/moment-timezone.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
-<script src="/theme/js/jquery.sticky-kit.min.js"></script>
+<script src="/theme/js/jquery.sticky.js"></script>
 <script>
 
   function resize() {
     $('header').css('height', window.innerHeight);
     var $headerText = $('header .text');
     $headerText.css('top', (window.innerHeight - $headerText.innerHeight()) / 2);
-    $(document.body).trigger('sticky_kit:recalc');
   }
   window.onresize = resize;
   resize();
-  $('nav').stick_in_parent();
   skrollr.init();
+
+  $('nav').sticky();
 
   moment.tz.add({
     "zones": {

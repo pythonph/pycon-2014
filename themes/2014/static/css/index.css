@@ -60,16 +60,17 @@ header .text {
 
 nav {
   background-color: #5a9fd4;
+  width: 100%;
   padding: 1em 0;
   z-index: 10;
 }
 
 nav li {
   padding-bottom: 0 !important;
-  text-align: center;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: bold;
+  text-align: center;
 }
 
 nav li a {
