@@ -220,6 +220,14 @@ nav li a:hover {
   line-height: 2;
 }
 
+.venue address {
+  font-style: normal;
+}
+
+.venue .building {
+  margin-top: 1em;
+}
+
 .date-and-venue .attribution {
   color: #9c9;
   line-height: 1;
