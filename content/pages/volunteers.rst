@@ -20,10 +20,13 @@ Sony is the PyCon Philippines conference chair and the main person in charge. He
 
   <h3>
     <small>Logistics Chair</small><br>
-    Andrew Paulo Robillo
+    Andrew Paulo Robillo, Ralph Vincent Regalado and Briane Paul Samson
   </h3>
 
 Andrew has put countless hours into coordinating the logistics for PyCon Philippines 2014, including venue sourcing, selection, and preparation; arrangement of catering for snacks, meals, and drinks; hospitality, reception, and concierge services. You can reach him at secretariat@python.ph
+
+Ralph and Briane contributed significant amounts of their time in making arrangements to reserve the venue, security, and other necessities. Aside from being passionate Computer Science professors in DLSU, they are also very keen in introducing the value of various tech communities to their students. 
+You can reach them at ralph.regalado@delasalle.ph and briane.samson@dlsu.edu.ph
 
 .. raw:: html
 
