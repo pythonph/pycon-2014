@@ -85,5 +85,11 @@ Community Relations Committee
 Manpower for the event day
 --------------------------
 
+- Acezon Rhay Cay
+- Earle Bunao
 - Gener Siddayao
+- Jadurani Davalos
+- Mara Shen
+- Patrick Granada
+- Ryan Paul Gozum
 - Vitruvius John Barayuga
