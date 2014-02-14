@@ -19,7 +19,7 @@ Sony is the PyCon Philippines conference chair and the main person in charge. He
 .. raw:: html
 
   <h3>
-    <small>Logistics Chair</small><br>
+    <small>Logistics Chairs</small><br>
     Andrew Paulo Robillo, Ralph Vincent Regalado and Briane Paul Samson
   </h3>
 
