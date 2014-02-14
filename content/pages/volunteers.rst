@@ -67,6 +67,7 @@ Logistics Committee
 -------------------
 
 - JP Llanaresas
+- Nikko Magalona
 
 Documentation Committee
 -----------------------
