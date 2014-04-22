@@ -10,6 +10,7 @@ Videos
 .. raw:: html
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flowplayer/5.4.6/flowplayer.min.js">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/flowplayer/5.4.6/flowplayer.min.js"></script>
   <div class="flowplayer">
     <p><video src="https://www.googledrive.com/host/0BwrPbVd2f3w8cndGRVFQdUdPZjg/DSC_5421.mp4"></p>
