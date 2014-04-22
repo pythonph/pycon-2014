@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="http://vjs.zencdn.net/4.5/video-js.css">
+{% endblock %}
+
+{% block js %}
+<script src="http://vjs.zencdn.net/4.5/video.js"></script>
+{% endblock %}
+
 {% block content %}
 
 <header>
