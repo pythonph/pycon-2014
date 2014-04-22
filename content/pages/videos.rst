@@ -9,7 +9,7 @@ Videos
 
 .. raw:: html
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flowplayer/5.4.6/flowplayer.min.js">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flowplayer/5.4.6/skin/minimalist.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/flowplayer/5.4.6/flowplayer.min.js"></script>
   <div class="flowplayer">
