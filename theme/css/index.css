@@ -1,0 +1,398 @@
+/* Index Page */
+
+header {
+  background: url(../images/splash.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+header .text {
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+
+.with-logo {
+  max-width: 62.5rem;
+  display: inline-block;
+  background: url(../images/pythonph.png) no-repeat left center;
+  padding-left: 16em;
+}
+
+.with-logo h1,
+.with-logo h2 {
+  color: white;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+}
+.with-logo h1 {
+  font-size: 12em;
+  font-weight: 900;
+}
+
+.with-logo h2 {
+  font-size: 4em;
+  letter-spacing: 0.08em;
+}
+
+.with-logo h2 span {
+  font-size: 1.1em;
+}
+
+.countdown {
+  font-family: Raleway;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.social {
+  margin-top: 5em;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #5a9fd4;
+  width: 100%;
+  padding: 1em 0;
+  z-index: 10;
+}
+
+nav li {
+  padding-bottom: 0 !important;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav li a {
+  color: inherit;
+  display: inline-block;
+  line-height: 2;
+  padding: 0 0.5em;
+  border: 3px solid;
+  width: 100%;
+}
+
+nav li a:hover {
+  color: #ffd43b;
+  border-color: #ffd43b;
+}
+
+.about {
+  padding: 5em 0;
+}
+
+.about .description {
+  font-size: 1.5em;
+}
+
+.about .coc {
+  padding-top: 5em;
+  text-align: center;
+}
+
+.pycon-ph-2012 {
+  padding: 5em 0;
+  background: #eee url(../images/pyconph2012.jpg) no-repeat;
+  background-size: cover;
+}
+
+.pycon-ph-2012 .photos img {
+  border: 3px #eee solid;
+}
+
+.speakers {
+  padding: 5em 0;
+  text-align: center;
+}
+
+.speakers h3 {
+  border-bottom: 1px #eee solid;
+  padding-bottom: 1em;
+  margin: 0 10em 2em 10em;
+}
+
+.speakers h4 {
+  margin-bottom: 1em;
+}
+
+.speakers img {
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+}
+
+.speakers .mrvaldez {
+  border: 1px solid;
+}
+
+.speakers .bio {
+  border-left: 1px #eee solid;
+  padding-left: 1em;
+  text-align: left;
+}
+
+.schedule {
+  padding: 5em 0;
+}
+
+.schedule h3 {
+  border-bottom: 1px #eee solid;
+  margin-bottom: 1em;
+}
+
+.schedule table {
+  width: 100%;
+}
+
+.schedule ul {
+  margin: 0;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+}
+
+.schedule .label {
+  height: 1.125rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 5em;
+}
+
+.schedule th,
+.schedule td {
+  vertical-align: top;
+}
+
+.schedule th:first-child {
+  width: 15em;
+}
+
+.schedule td:first-child {
+  font-family: Droid Sans Mono, monospace;
+  font-size: 0.6em;
+}
+
+.schedule .panel {
+  font-size: 0.8em;
+}
+
+.date-and-venue {
+  font-family: Lora, serif;
+  background: url(../images/dlsu.jpg) no-repeat;
+  background-size: cover;
+  padding: 10em 0;
+  position: relative;
+}
+
+.date-and-venue h3 {
+  font-family: Lora, serif;
+  border-bottom: 1px solid #111;
+  margin-bottom: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.date-and-venue .row {
+  padding: 2em;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.date-and-venue .details {
+  margin-bottom: 2em;
+}
+
+.cal {
+  border: 1px #9c9 solid;
+  display: inline-block;
+  width: 10em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cal span {
+  display: block;
+  width: 100%;
+}
+
+.cal .m,
+.cal .y {
+  line-height: 2;
+  background-color: #9c9;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.cal .d {
+  font-size: 3em;
+  line-height: 2;
+}
+
+.venue address {
+  font-style: normal;
+}
+
+.venue .building {
+  margin-top: 1em;
+}
+
+.date-and-venue .attribution {
+  color: #9c9;
+  line-height: 1;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  font-style: italic;
+}
+
+.tickets {
+  padding: 5em 0;
+}
+
+.tickets h3 {
+  margin-bottom: 1em;
+}
+
+.eventbrite {
+  height: 40em;
+}
+
+.eventbrite iframe {
+  height: 100%;
+}
+
+.free-tickets {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.sold-out {
+  text-align: center;
+  border: 1px solid;
+  padding: 2em 0;
+}
+
+.sponsors {
+  padding: 5em 0 10em 0;
+  text-align: center;
+}
+
+.sponsors h3 {
+  margin-bottom: 2em;
+}
+
+.sponsors h4 {
+  margin-bottom: 2em;
+}
+
+.sponsors .organizers {
+  margin-bottom: 4em;
+}
+
+.sponsors .write-up {
+  padding: 1em;
+  border: 1px #eee solid;
+  text-align: left;
+}
+
+.organizers .logo {
+  line-height: 16em;
+  margin-bottom: 2em;
+}
+
+.sponsors-list h4 {
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  margin: 0 auto 2em auto;
+  padding-bottom: 1em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.sponsors-list .package {
+  margin-bottom: 4em;
+}
+
+.sponsors-list .platinum h4 {
+  border-color: #e5e4e2;
+  color: #e5e4e2;
+}
+
+.sponsors-list .gold h4 {
+  border-color: gold;
+  color: gold;
+}
+
+.sponsors-list .silver h4 {
+  border-color: silver;
+  color: silver;
+}
+
+.sponsors-list .bronze h4 {
+  border-color: #cd7f32;
+  color: #cd7f32;
+}
+
+.sponsors-list .partners h4 {
+  text-shadow: 0;
+}
+
+.sponsors-list .logo {
+  margin-top: 2em;
+}
+
+.sponsors-list .logo a {
+  display: inline-block;
+}
+
+.get-involved {
+  color: white;
+  background-color: #222;
+  padding: 2em 0;
+}
+
+.get-involved h3 {
+  color: white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 40em) {
+  section {
+    padding: 3em 1.5em !important
+  }
+  .with-logo {
+    padding: 18em 0 0 0;
+    background-position: center top;
+  }
+  .with-logo h1 {
+    font-size: 4em;
+  }
+  .with-logo h2 {
+    font-size: 1.33em;
+  }
+  .speakers h3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .date-and-venue {
+    text-align: center;
+  }
+  .date-and-venue .row {
+    padding: 1em 0;
+  }
+}
+

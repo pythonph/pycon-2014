@@ -1,0 +1,59 @@
+body, input, textarea, select {
+  font: 18px/1.5 Quattrocento Sans, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .button {
+  font-family: Raleway, sans-serif;
+}
+
+a {
+  color: #5a9fd4;
+}
+
+a:hover {
+  color: #5a9fd4;
+}
+
+.button {
+  border-radius: 0;
+  background-color: #ffd43b;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  color: #222;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #5a9fd4;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+}
+
+footer .links {
+  font-size: 0.8em;
+}
+
+footer .links ,
+footer .links a {
+  color: #999;
+}
+
+footer .links a:hover {
+  color: #222;
+}
+
+/* Pages */
+
+.page header {
+  border-bottom: 1px solid #5a9fd4;
+  margin-bottom: 2em;
+}
+
+.page header h1 {
+  font-size: 1.5em;
+}
